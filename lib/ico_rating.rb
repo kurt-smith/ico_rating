@@ -81,8 +81,8 @@ class IcoRating
       symbol = td[1].text[/\((.+)\)/, 1]
 
       {
-        name: symbol.blank? ? td[1].text : td[1].text[/(.+)\(/, 1].strip,
-        symbol: symbol,
+        name: symbol.blank? ? td[1].text.strip : td[1].text[/(.+)\(/, 1].strip,
+        symbol: symbol.presence,
         url: row.attr('data-href'),
         ico_start: parse_date(dates[0]),
         ico_end: parse_date(dates[1]),

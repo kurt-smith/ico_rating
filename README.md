@@ -2,6 +2,8 @@
 
 # IcoRating
 
+### WIP: Not Gem ready due to SSL error workaround and delayed responses
+
 Ruby Gem that parses cryptocurrency ICOs information, ratings, and expert information from IcoRating.com.
 
 ## Installation
@@ -18,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install IcoRating
+    $ gem install 'ico_rating'
 
 ## Usage
 
